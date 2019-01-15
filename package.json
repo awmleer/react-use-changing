@@ -1,0 +1,24 @@
+{
+  "name": "react-use-delayed",
+  "version": "1.0.0",
+  "description": "React useDelayed hook.",
+  "keywords": [
+    "react",
+    "hook",
+    "delay",
+    "delayed"
+  ],
+  "main": "index.js",
+  "repository": "git@github.com:awmleer/react-use-delayed.git",
+  "author": "awmleer <awmleer@sparker.xyz>",
+  "license": "MIT",
+  "private": false,
+  "devDependencies":  {
+    "@types/react": "16.7.x",
+    "react": "16.7.0-alpha.2",
+    "typescript": "^3.1.1"
+  },
+  "peerDependencies": {
+    "react": "16.7.0-alpha.2"
+  }
+}
