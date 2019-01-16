@@ -1,11 +1,19 @@
-import {useEffect, useState} from 'react'
+import {useEffect, useRef, useState} from 'react'
 
-export function useDelayed<T>(value: T, timeout: number) {
-  const [delayed, setDelayed] = useState(value)
+export function useChanging<T>(value: T, timeout: number) {
+  const [changing, setChanging] = useState(true)
+  const lastValueRef = useRef<T>(undefined)
+  if (lastValueRef.current !== value) {
+    lastValueRef.current = value
+    if (!changing) setChanging(true)
+  }
   useEffect(() => {
-    setTimeout(() => {
-      setDelayed(value)
+    const id = setTimeout(() => {
+      setChanging(false)
     }, timeout)
+    return () => {
+      clearTimeout(id)
+    }
   }, [value])
-  return delayed
+  return changing
 }
