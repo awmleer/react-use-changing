@@ -1,2 +1,2 @@
 # react-use-changing
-React useDelayed hook.
+React useChanging hook.

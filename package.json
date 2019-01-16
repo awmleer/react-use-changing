@@ -4,7 +4,7 @@
   "scripts": {
     "build": "gulp prebuild && tsc"
   },
-  "description": "React useDelayed hook.",
+  "description": "React useChanging hook.",
   "keywords": [
     "react",
     "hook",
