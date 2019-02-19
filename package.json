@@ -17,13 +17,13 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
-    "@types/react": "16.7.x",
+    "@types/react": "16.8.x",
     "gulp": "4.0.x",
     "gulp-clean": "^0.4.0",
-    "react": "16.7.0-alpha.2",
+    "react": "16.8.x",
     "typescript": "^3.1.1"
   },
   "peerDependencies": {
-    "react": "16.7.0-alpha.2"
+    "react": "16.8.x"
   }
 }
